@@ -2,311 +2,42 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Freedom Mobile Deals</title>
-
+<meta name="description" content="Freedom Mobile deals and promotions">
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-}
-
-body{
-background:linear-gradient(-45deg,#4b0082,#6a00ff,#00bfff,#00ffaa);
-background-size:400% 400%;
-animation:bg 12s ease infinite;
-color:white;
-overflow-x:hidden;
-}
-
-@keyframes bg{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-}
-
-.hero{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-padding:25px;
-text-align:center;
-}
-
-h1{
-font-size:56px;
-text-shadow:0 0 20px cyan;
-animation:glow 2s infinite alternate;
-}
-
-@keyframes glow{
-from{transform:scale(1);}
-to{transform:scale(1.04);}
-}
-
-.subtitle{
-font-size:22px;
-margin:20px 0;
-max-width:800px;
-}
-
-.btn{
-display:inline-block;
-padding:18px 40px;
-border-radius:50px;
-text-decoration:none;
-background:#ffcc00;
-color:#000;
-font-size:20px;
-font-weight:bold;
-box-shadow:0 0 30px gold;
-transition:.3s;
-}
-
-.btn:hover{
-transform:scale(1.08);
-box-shadow:0 0 45px white;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-padding:50px 25px;
-max-width:1200px;
-margin:auto;
-}
-
-.card{
-background:rgba(255,255,255,.15);
-backdrop-filter:blur(15px);
-padding:30px;
-border-radius:20px;
-box-shadow:0 0 20px rgba(255,255,255,.3);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 35px cyan;
-}
-
-.card h2{
-margin-bottom:15px;
-color:#ffe600;
-}
-
-.section-title{
-text-align:center;
-font-size:42px;
-margin:40px 0;
-text-shadow:0 0 15px white;
-}
-
-.footer{
-text-align:center;
-padding:40px;
-font-size:15px;
-opacity:.8;
-}
-
-.badge{
-display:inline-block;
-padding:10px 18px;
-border-radius:30px;
-background:#00ff88;
-color:#000;
-font-weight:bold;
-margin-top:20px;
-animation:pulse 1.5s infinite;
-}
-
-@keyframes pulse{
-50%{
-transform:scale(1.08);
-}
-}
-
-ul{
-text-align:left;
-padding-left:20px;
-line-height:1.8;
-}
-
-.stars{
-position:fixed;
-width:100%;
-height:100%;
-top:0;
-left:0;
-pointer-events:none;
-overflow:hidden;
-}
-
-.star{
-position:absolute;
-width:4px;
-height:4px;
-background:white;
-border-radius:50%;
-animation:fall linear infinite;
-opacity:.8;
-}
-
-@keyframes fall{
-from{
-transform:translateY(-10px);
-}
-to{
-transform:translateY(110vh);
-}
-}
-
-@media(max-width:600px){
-h1{
-font-size:38px;
-}
-.subtitle{
-font-size:18px;
-}
-.btn{
-font-size:18px;
-padding:15px 30px;
-}
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:linear-gradient(135deg,#4b0082,#00bfff,#00ffaa);background-size:300% 300%;animation:bg 12s infinite;color:#fff}
+@keyframes bg{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+header{padding:80px 20px;text-align:center}
+h1{font-size:3rem;text-shadow:0 0 20px #0ff}
+p{max-width:800px;margin:20px auto;font-size:1.2rem}
+.btn{display:inline-block;margin:10px;padding:16px 34px;background:#ffd400;color:#000;text-decoration:none;border-radius:40px;font-weight:bold}
+.btn:hover{transform:scale(1.05)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:1200px;margin:40px auto;padding:20px}
+.card{background:rgba(255,255,255,.15);padding:25px;border-radius:20px;backdrop-filter:blur(8px)}
+.card h2{color:#ffe66d;margin-bottom:10px}
+ul{padding-left:20px;line-height:1.8}
+footer{text-align:center;padding:40px;opacity:.8}
 </style>
-
 </head>
-
 <body>
+<header>
+<h1>🚀 Freedom Mobile Deals</h1>
+<p>Explore Freedom Mobile promotions, digital discounts, 5G plans and roaming benefits.</p>
+<a class="btn" href="https://www.freedommobile.ca/" target="_blank" rel="noopener noreferrer">Explore Plans</a>
+<a class="btn" href="https://www.freedommobile.ca/" target="_blank" rel="noopener noreferrer">Visit Freedom Mobile</a>
+</header>
 
-<div class="stars" id="stars"></div>
+<section class="grid">
+<div class="card"><h2>🎁 Refer a Friend</h2><ul><li>Referral rewards</li><li>Easy signup</li><li>Online activation</li></ul></div>
+<div class="card"><h2>💰 Digital Discount</h2><ul><li>Auto Pay savings</li><li>Monthly discounts</li><li>Secure billing</li></ul></div>
+<div class="card"><h2>📶 5G+</h2><ul><li>Fast speeds</li><li>Smooth streaming</li><li>Reliable network</li></ul></div>
+<div class="card"><h2>🌎 Roaming</h2><ul><li>Travel options</li><li>Stay connected</li><li>Select plans</li></ul></div>
+<div class="card"><h2>🇨🇦🇺🇸🇲🇽 Plans</h2><ul><li>Canada</li><li>USA</li><li>Mexico</li></ul></div>
+<div class="card"><h2>⚡ Bonus Data</h2><ul><li>Seasonal offers</li><li>Extra data</li><li>Great value</li></ul></div>
+</section>
 
-<div class="hero">
-
-<h1>🚀 FREEDOM MOBILE DEALS 🚀</h1>
-
-<div class="badge">
-LIMITED TIME OFFERS
-</div>
-
-<p class="subtitle">
-Experience fast 5G+, affordable plans, roaming benefits and amazing promotions with Freedom Mobile.
-</p>
-
-<a class="btn" href="https://www.freedommobile.ca" target="_blank">
-Explore Plans
-</a>
-
-</div>
-
-<h2 class="section-title">
-🔥 Current Promotions 🔥
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<h2>🎁 Refer a Friend</h2>
-<ul>
-<li>Earn referral credits</li>
-<li>Friends save too</li>
-<li>Easy online process</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>💰 Digital Discount</h2>
-<ul>
-<li>Save every month</li>
-<li>Enable Auto Pay</li>
-<li>Simple & secure</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>📶 5G+ Network</h2>
-<ul>
-<li>Fast downloads</li>
-<li>Smooth streaming</li>
-<li>Reliable coverage</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>🌎 Roam Beyond</h2>
-<ul>
-<li>Travel to many countries</li>
-<li>Stay connected</li>
-<li>No SIM swapping</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>🇨🇦🇺🇸🇲🇽 Plans</h2>
-<ul>
-<li>Canada</li>
-<li>USA</li>
-<li>Mexico</li>
-<li>Included on select plans</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>⚡ Bonus Data</h2>
-<ul>
-<li>Seasonal promotions</li>
-<li>More data</li>
-<li>Great value</li>
-</ul>
-</div>
-
-</div>
-
-<div class="hero" style="min-height:60vh">
-
-<h2 style="font-size:45px">
-Freedom Starts Here
-</h2>
-
-<p class="subtitle">
-Switch today and discover affordable wireless plans, flexible options and nationwide connectivity.
-</p>
-
-<a class="btn" href="https://www.freedommobile.ca" target="_blank">
-Visit Freedom Mobile
-</a>
-
-</div>
-
-<div class="footer">
-Designed as a promotional landing page for Freedom Mobile offers.<br>
-Always verify the latest promotions on Freedom Mobile's official website.
-</div>
-
-<script>
-
-for(let i=0;i<120;i++){
-
-let s=document.createElement("div");
-
-s.className="star";
-
-s.style.left=Math.random()*100+"%";
-
-s.style.animationDuration=(Math.random()*5+3)+"s";
-
-s.style.animationDelay=Math.random()*5+"s";
-
-document.getElementById("stars").appendChild(s);
-
-}
-
-</script>
-
+<footer>© 2026 Freedom Mobile Deals. Verify current offers on the official Freedom Mobile website.</footer>
 </body>
 </html>
